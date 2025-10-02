@@ -1,4 +1,4 @@
-/* DOS Retro Styling - Black & White Version */
+/* DOS Retro Styling */
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
 
 * {
@@ -10,7 +10,7 @@
 body {
     font-family: 'Courier Prime', 'Courier New', monospace;
     background-color: #000000;
-    color: #ffffff;
+    color: #00ff00;
     font-size: 14px;
     line-height: 1.2;
     overflow-x: auto;
@@ -22,7 +22,7 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     background-color: #000000;
-    border: 2px solid #ffffff;
+    border: 2px solid #00ff00;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -31,10 +31,10 @@ body {
 /* Header Styling */
 .dos-header {
     background-color: #000000;
-    color: #ffffff;
+    color: #00ff00;
     padding: 10px;
     text-align: center;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #00ff00;
 }
 
 .title-bar {
@@ -57,7 +57,7 @@ body {
 }
 
 .prompt {
-    color: #ffffff;
+    color: #ffff00;
     font-weight: bold;
     white-space: nowrap;
 }
@@ -65,8 +65,8 @@ body {
 #todoInput {
     flex: 1;
     background-color: #000000;
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    color: #00ff00;
+    border: 1px solid #00ff00;
     padding: 5px 8px;
     font-family: inherit;
     font-size: inherit;
@@ -74,18 +74,18 @@ body {
 }
 
 #todoInput:focus {
-    background-color: #111111;
-    box-shadow: 0 0 5px #ffffff;
+    background-color: #001100;
+    box-shadow: 0 0 5px #00ff00;
 }
 
 #todoInput::placeholder {
-    color: #888888;
+    color: #008800;
 }
 
 .dos-button {
     background-color: #000000;
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    color: #00ff00;
+    border: 1px solid #00ff00;
     padding: 5px 10px;
     font-family: inherit;
     font-size: inherit;
@@ -94,16 +94,16 @@ body {
 }
 
 .dos-button:hover {
-    background-color: #ffffff;
+    background-color: #00ff00;
     color: #000000;
 }
 
 .dos-button:active {
-    background-color: #888888;
+    background-color: #008800;
 }
 
 .separator {
-    color: #888888;
+    color: #008800;
     margin: 15px 0;
     font-size: 12px;
 }
@@ -115,7 +115,7 @@ body {
 
 .section-header,
 .section-footer {
-    color: #888888;
+    color: #008800;
     font-size: 12px;
 }
 
@@ -137,24 +137,24 @@ body {
 }
 
 .todo-item:hover {
-    background-color: #111111;
-    border-left-color: #ffffff;
+    background-color: #001100;
+    border-left-color: #00ff00;
 }
 
 .todo-item.completed {
-    color: #888888;
+    color: #008800;
     text-decoration: line-through;
 }
 
 .todo-item.completed:hover {
-    background-color: #111111;
-    border-left-color: #cccccc;
+    background-color: #110800;
+    border-left-color: #ff8800;
 }
 
 .todo-checkbox {
     margin-right: 10px;
     font-weight: bold;
-    color: #ffffff;
+    color: #ffff00;
 }
 
 .todo-text {
@@ -163,7 +163,7 @@ body {
 }
 
 .todo-delete {
-    color: #ffffff;
+    color: #ff0000;
     cursor: pointer;
     padding: 0 5px;
     font-weight: bold;
@@ -176,7 +176,7 @@ body {
 }
 
 .todo-delete:hover {
-    background-color: #ffffff;
+    background-color: #ff0000;
     color: #000000;
 }
 
@@ -185,22 +185,22 @@ body {
     display: flex;
     gap: 10px;
     padding: 10px 0;
-    border-top: 1px solid #888888;
-    color: #ffffff;
+    border-top: 1px solid #008800;
+    color: #ffff00;
     font-size: 12px;
 }
 
 .spacer {
-    color: #888888;
+    color: #008800;
 }
 
 /* Footer */
 .dos-footer {
     background-color: #000000;
-    color: #ffffff;
+    color: #00ff00;
     padding: 8px;
     text-align: center;
-    border-top: 2px solid #ffffff;
+    border-top: 2px solid #00ff00;
     font-size: 11px;
 }
 
@@ -212,7 +212,7 @@ body {
 /* Empty State */
 .empty-state {
     text-align: center;
-    color: #888888;
+    color: #008800;
     font-style: italic;
     padding: 40px 20px;
 }
@@ -224,22 +224,22 @@ body {
 
 .todo-list::-webkit-scrollbar-track {
     background: #000000;
-    border: 1px solid #888888;
+    border: 1px solid #008800;
 }
 
 .todo-list::-webkit-scrollbar-thumb {
-    background: #ffffff;
+    background: #00ff00;
     border-radius: 0;
 }
 
 .todo-list::-webkit-scrollbar-thumb:hover {
-    background: #888888;
+    background: #008800;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .dos-container {
-        border: 1px solid #ffffff;
+        border: 1px solid #00ff00;
         margin: 0;
         max-width: 100%;
     }
@@ -277,5 +277,5 @@ body {
 .cursor-blink::after {
     content: '█';
     animation: blink 1s infinite;
-    color: #ffffff;
+    color: #00ff00;
 }

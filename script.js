@@ -1,4 +1,4 @@
-// DOS Todo List Application - Black & White Version
+// DOS Todo List Application
 class DOSTodoApp {
     constructor() {
         this.todos = this.loadTodos();
@@ -153,11 +153,11 @@ class DOSTodoApp {
         const originalText = prompt.textContent;
         
         prompt.textContent = `C:\\TODO> ${message}`;
-        prompt.style.color = '#ffffff';
+        prompt.style.color = '#ffff00';
         
         setTimeout(() => {
             prompt.textContent = originalText;
-            prompt.style.color = '#ffffff';
+            prompt.style.color = '#ffff00';
         }, 2000);
     }
 
@@ -174,8 +174,8 @@ class DOSTodoApp {
     // Local Storage Methods
     saveTodos() {
         try {
-            localStorage.setItem('dos-todos-bw', JSON.stringify(this.todos));
-            localStorage.setItem('dos-todo-counter-bw', this.todoIdCounter.toString());
+            localStorage.setItem('dos-todos', JSON.stringify(this.todos));
+            localStorage.setItem('dos-todo-counter', this.todoIdCounter.toString());
         } catch (e) {
             console.warn('Could not save todos to localStorage:', e);
         }
@@ -183,7 +183,7 @@ class DOSTodoApp {
 
     loadTodos() {
         try {
-            const saved = localStorage.getItem('dos-todos-bw');
+            const saved = localStorage.getItem('dos-todos');
             return saved ? JSON.parse(saved) : [];
         } catch (e) {
             console.warn('Could not load todos from localStorage:', e);
@@ -193,7 +193,7 @@ class DOSTodoApp {
 
     getNextId() {
         try {
-            const saved = localStorage.getItem('dos-todo-counter-bw');
+            const saved = localStorage.getItem('dos-todo-counter');
             return saved ? parseInt(saved, 10) : 1;
         } catch (e) {
             return 1;
@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Add some DOS-style startup messages
     setTimeout(() => {
-        console.log('DOS TODO v1.0 (Black & White) - System Ready');
+        console.log('DOS TODO v1.0 - System Ready');
         console.log('Copyright (C) 2025 - All rights reserved');
         console.log('Type tasks and press ENTER to add them');
         console.log('Use ESC to clear completed tasks');
@@ -234,3 +234,4 @@ function playBeep() {
     oscillator.stop(audioContext.currentTime + 0.1);
 }
 */
+
