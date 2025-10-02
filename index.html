@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOS TODO v1.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dos-container">
+        <!-- DOS Header -->
+        <div class="dos-header">
+            <div class="title-bar">
+                ╔══════════════════════════════════════════════════════════════════════════════╗
+                ║                              DOS TODO v1.0                                  ║
+                ║                         Copyright (C) 2025                                  ║
+                ╚══════════════════════════════════════════════════════════════════════════════╝
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <div class="command-line">
+                <span class="prompt">C:\TODO></span>
+                <input type="text" id="todoInput" placeholder="Enter new task..." maxlength="60">
+                <button id="addBtn" class="dos-button">[ADD]</button>
+            </div>
+
+            <div class="separator">
+                ────────────────────────────────────────────────────────────────────────────────
+            </div>
+
+            <div class="todo-section">
+                <div class="section-header">
+                    ┌─ ACTIVE TASKS ─────────────────────────────────────────────────────────────┐
+                </div>
+                <div id="todoList" class="todo-list">
+                    <!-- Tasks will be dynamically added here -->
+                </div>
+                <div class="section-footer">
+                    └────────────────────────────────────────────────────────────────────────────┘
+                </div>
+            </div>
+
+            <div class="stats-bar">
+                <span id="taskCount">Tasks: 0</span>
+                <span class="spacer">│</span>
+                <span id="completedCount">Completed: 0</span>
+                <span class="spacer">│</span>
+                <span id="pendingCount">Pending: 0</span>
+            </div>
+        </div>
+
+        <!-- DOS Footer -->
+        <div class="dos-footer">
+            <div class="help-text">
+                [ENTER] Add Task │ [DEL] Remove │ [SPACE] Toggle Complete │ [ESC] Clear All
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
